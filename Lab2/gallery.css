@@ -1,0 +1,15 @@
+img {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    border-radius: 20px;
+    object-fit: cover;
+    opacity: 0.5;
+    transition: 0.9s;
+}
+
+img:hover {
+    opacity: 1;
+    transform: scale(1.2);
+    box-shadow: 0 10px 20px rgba(253, 253, 253, 0.4);
+}

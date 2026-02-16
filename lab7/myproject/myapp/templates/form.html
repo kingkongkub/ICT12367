@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บันทึกข้อมูลพนักงาน</title>
+    <style>
+        /* ตั้งค่าพื้นฐาน */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Sarabun';
+            background-color: #f4efed; /* สีพื้นหลังชมพูอ่อนๆ ตามภาพ */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* กล่องคอนเทนเนอร์สีขาว */
+        .form-container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 450px;
+        }
+
+        /* หัวข้อภาษาไทย */
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+
+        /* การจัดการ Label และ Input */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box; /* สำคัญ: ทำให้ padding ไม่ดันความกว้างออก */
+            font-size: 16px;
+            outline: none;
+        }
+
+        /* สไตล์เมื่อเอาเมาส์ไปคลิกที่ช่องกรอก */
+        input:focus, select:focus {
+            border-color: #28a745;
+        }
+
+        /* ปุ่ม Submit สีเขียว */
+        button {
+            width: 100%;
+            padding: 14px;
+            background-color: #28a745; /* สีเขียวตามภาพ */
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>บันทึกข้อมูลพนักงาน</h2>
+        
+        <form action="#">
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="กรอกชื่อ-นามสกุล">
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="example@email.com">
+            </div>
+
+            <div class="form-group">
+                <label>Position</label>
+                <select>
+                    <option value="manager">Manager</option>
+                    <option value="developer">Developer</option>
+                    <option value="designer">Designer</option>
+                    <option value="hr">HR</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" placeholder="08X-XXX-XXXX">
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>

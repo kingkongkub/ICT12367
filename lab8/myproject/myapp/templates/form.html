@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %}ลงทะเบียน / แบบฟอร์ม{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card shadow-sm border-0">
+            <div class="card-header bg-primary text-white text-center py-3">
+                <h4 class="mb-0">แบบฟอร์มบันทึกข้อมูลประชากร</h4>
+            </div>
+            <div class="card-body p-4 bg-light">
+                <form>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="firstName" class="form-label fw-bold">ชื่อ</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="กรอกชื่อ">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="lastName" class="form-label fw-bold">นามสกุล</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="กรอกนามสกุล">
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="idCard" class="form-label fw-bold">เลขประจำตัวประชาชน</label>
+                        <input type="text" class="form-control" id="idCard" placeholder="กรอกรหัสบัตรประชาชน 13 หลัก">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="address" class="form-label fw-bold">ที่อยู่ปัจจุบัน</label>
+                        <textarea class="form-control" id="address" rows="3" placeholder="ระบุรายละเอียดที่อยู่"></textarea>
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-success btn-lg">บันทึกข้อมูล</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

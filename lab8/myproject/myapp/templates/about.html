@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}เกี่ยวกับเรา - ภาพกิจกรรม{% endblock %}
+
+{% block content %}
+<div class="text-center mb-5">
+    <h2 class="display-6 fw-bold text-primary">ภาพกิจกรรม (Gallery)</h2>
+    <p class="text-muted fs-5">ประมวลภาพกิจกรรมต่างๆ ในรายวิชา ICT12367</p>
+    <hr class="w-25 mx-auto">
+</div>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+        <div class="card h-100 shadow-sm border-0">
+            <img src="https://images.pexels.com/photos/10646410/pexels-photo-10646410.jpeg" class="card-img-top rounded" alt="กิจกรรม 1">
+            <div class="card-body">
+                <h5 class="card-title fw-bold">กิจกรรมการเรียนในห้อง</h5>
+                <p class="card-text text-muted">บรรยากาศการเรียนการสอนในห้องปฏิบัติการคอมพิวเตอร์</p>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100 shadow-sm border-0">
+            <img src="https://images.pexels.com/photos/6476778/pexels-photo-6476778.jpeg" class="card-img-top rounded" alt="กิจกรรม 2">
+            <div class="card-body">
+                <h5 class="card-title fw-bold">การนำเสนอโปรเจกต์</h5>
+                <p class="card-text text-muted">นักศึกษานำเสนอผลงานเว็บแอปพลิเคชันที่พัฒนาด้วย Django</p>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100 shadow-sm border-0">
+            <img src="https://images.pexels.com/photos/1164572/pexels-photo-1164572.jpeg" class="card-img-top rounded" alt="กิจกรรม 3">
+            <div class="card-body">
+                <h5 class="card-title fw-bold">กิจกรรมทัศนศึกษา</h5>
+                <p class="card-text text-muted">ดูงานด้านระบบรักษาความปลอดภัยสารสนเทศ</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
